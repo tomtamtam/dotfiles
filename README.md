@@ -1,5 +1,5 @@
 # Dotfiles
-these are my dotfiles to:
+these are my gruvbox styled dotfiles to:
 - nixos
 - hyprland
 - waybar
