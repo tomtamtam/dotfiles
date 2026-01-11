@@ -8,4 +8,4 @@ these are my dotfiles to:
 - neovim
 - wallpapers, cursors, fonts
 
-![example.png]
+[example.png]
