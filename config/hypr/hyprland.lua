@@ -21,6 +21,7 @@ local p_fileManager = "nautilus"
 local p_menu        = "hyprlauncher"
 local p_browser     = "firefox"
 local p_discord     = "discord"
+local p_wallpaper   = "hyprpaper"
 
 -- Color / Style
 -- border
@@ -51,6 +52,7 @@ local p_discord     = "discord"
 hl.on("hyprland.start", function () 
   hl.exec_cmd(p_terminal)
   hl.exec_cmd(p_discord)
+  hl.exec_cmd(p_wallpaper)
 end)
 
 

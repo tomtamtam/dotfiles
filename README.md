@@ -1,6 +1,6 @@
 # Dotfiles
 
-my dotfiles for hyprland, hyprpaper, neovim
+my dotfiles for: {hyprland, hyprpaper, neovim, alacritty, fish, fastfetch} and a sync tool for them
 
 ## Sync Tool
 I also wrote a sync tool in c++.
