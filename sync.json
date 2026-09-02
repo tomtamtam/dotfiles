@@ -1,0 +1,9 @@
+{
+	"directories": [
+		{"origin": "/home/tom/dev/dotfiles/config/hypr", "dest": "/home/tom/.config/hypr"},
+		{"origin": "/home/tom/dev/dotfiles/config/alacritty", "dest": "/home/tom/.config/alacritty"},
+		{"origin": "/home/tom/dev/dotfiles/config/neovim_configuration", "dest": "/home/tom/.config/nvim"}
+	],
+	"files": [
+	]
+}

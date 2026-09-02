@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/tom/dev/dotfiles/sync/build",
+  "command": "/usr/bin/c++  -I/home/tom/dev/dotfiles/sync/thirdparty -std=gnu++26 -o CMakeFiles/sync.dir/src/main.cpp.o -c /home/tom/dev/dotfiles/sync/src/main.cpp",
+  "file": "/home/tom/dev/dotfiles/sync/src/main.cpp",
+  "output": "CMakeFiles/sync.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/tom/dev/dotfiles/sync/build",
+  "command": "/usr/bin/c++  -I/home/tom/dev/dotfiles/sync/thirdparty -std=gnu++26 -o CMakeFiles/sync.dir/src/sync/Syncs.cpp.o -c /home/tom/dev/dotfiles/sync/src/sync/Syncs.cpp",
+  "file": "/home/tom/dev/dotfiles/sync/src/sync/Syncs.cpp",
+  "output": "CMakeFiles/sync.dir/src/sync/Syncs.cpp.o"
+}
+]

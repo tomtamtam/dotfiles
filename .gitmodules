@@ -1,0 +1,3 @@
+[submodule "neovim_configuration"]
+	path = config/neovim_configuration
+	url = git@github.com:tomtamtam/neovim_configuration.git
