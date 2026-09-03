@@ -22,11 +22,12 @@ local p_menu        = "hyprlauncher"
 local p_browser     = "firefox"
 local p_discord     = "discord"
 local p_wallpaper   = "hyprpaper"
+local p_bar         = "waybar"
 
 -- Color / Style
 -- border
-	local c_border_active_a = "rgba(33ccffee)"
-	local c_border_active_b = "rgba(00ff99ee)"
+	local c_border_active_a = "rgba(ff7eb6ee)"
+	local c_border_active_b = "rgba(08bdbaee)"
 	local c_border_inactive = "rgba(595959aa)"
 
 	local s_border_angle = 45
@@ -53,6 +54,7 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd(p_terminal)
   hl.exec_cmd(p_discord)
   hl.exec_cmd(p_wallpaper)
+  hl.exec_cmd(p_bar)
 end)
 
 

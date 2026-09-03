@@ -1,0 +1,170 @@
+/*
+ * Waybar — Oxocarbon theme
+ * Palette based on IBM Carbon "Oxocarbon" dark theme
+ */
+
+@define-color bg0     #161616; /* base background */
+@define-color bg1     #262626; /* module background */
+@define-color bg2     #393939; /* hover / active background */
+@define-color bg3     #525252; /* borders / separators */
+@define-color fg0     #dde1e6; /* primary text */
+@define-color fg1     #f2f4f8; /* bright text */
+
+@define-color red      #ee5396;
+@define-color green    #42be65;
+@define-color yellow   #ffe97b;
+@define-color blue     #78a9ff;
+@define-color purple   #be95ff;
+@define-color cyan     #33b1ff;
+@define-color teal     #3ddbd9;
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* Shared "pill" look for each module group */
+#workspaces,
+#window,
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#battery,
+#tray {
+    background-color: @bg1;
+    border-radius: 12px;
+    padding: 0 12px;
+    margin: 0 3px;
+    color: @fg0;
+}
+
+/* ---------- Workspaces ---------- */
+#workspaces {
+    padding: 0 6px;
+}
+
+#workspaces button {
+    color: @bg3;
+    background: transparent;
+    padding: 0 6px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.active {
+    color: @bg0;
+    background-color: @purple;
+    padding: 0 12px;
+}
+
+#workspaces button.empty {
+    color: @bg3;
+}
+
+#workspaces button:hover {
+    background-color: @bg2;
+    color: @fg1;
+}
+
+/* ---------- Window title ---------- */
+#window {
+    color: @fg1;
+    font-weight: 500;
+}
+
+/* ---------- Clock ---------- */
+#clock {
+    color: @fg1;
+    font-weight: 700;
+}
+
+/* ---------- System modules ---------- */
+#cpu {
+    color: @cyan;
+}
+
+#memory {
+    color: @teal;
+}
+
+#network {
+    color: @blue;
+}
+
+#network.disconnected {
+    color: @red;
+}
+
+#pulseaudio {
+    color: @purple;
+}
+
+#pulseaudio.muted {
+    color: @bg3;
+}
+
+/* ---------- Battery ---------- */
+#battery {
+    color: @green;
+}
+
+#battery.warning:not(.charging) {
+    color: @yellow;
+}
+
+#battery.critical:not(.charging) {
+    color: @red;
+}
+
+#battery.charging {
+    color: @green;
+}
+
+@keyframes blink {
+    to {
+        color: @fg1;
+        background-color: @red;
+    }
+}
+
+#battery.critical:not(.charging) {
+    animation-name: blink;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* ---------- Tray ---------- */
+#tray {
+    padding: 0 10px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @red;
+}
+
+/* ---------- Tooltips ---------- */
+tooltip {
+    background: @bg1;
+    border: 1px solid @purple;
+    border-radius: 10px;
+}
+
+tooltip label {
+    color: @fg0;
+}

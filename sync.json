@@ -4,6 +4,7 @@
 		{"origin": "/home/tom/dev/dotfiles/config/alacritty", "dest": "/home/tom/.config/alacritty"},
 		{"origin": "/home/tom/dev/dotfiles/config/fish", "dest": "/home/tom/.config/fish"},
 		{"origin": "/home/tom/dev/dotfiles/config/fastfetch/", "dest": "/home/tom/.config/fastfetch"},
+		{"origin": "/home/tom/dev/dotfiles/config/waybar", "dest": "/home/tom/.config/waybar"},
 		{"origin": "/home/tom/dev/dotfiles/config/neovim_configuration", "dest": "/home/tom/.config/nvim"}
 	],
 	"files": [
